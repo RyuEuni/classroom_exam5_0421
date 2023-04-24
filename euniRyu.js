@@ -23,6 +23,7 @@ function exampleOne(inputPrice, currency, basicData){
   let buyYes = [];
 
   for(let i = 0; i < Object.keys(currency).length; i++){
+    
     if(inputPrice === currency[Object.keys(currency)[i]].value){
       console.log(`${currency[Object.keys(currency)[i]].name}을 넣었습니다.`)
     }
@@ -45,6 +46,5 @@ function exampleOne(inputPrice, currency, basicData){
       console.log("당신은 부자입니다.")
     }
   }
-
 }
 exampleOne(1000, currency, basicData)
